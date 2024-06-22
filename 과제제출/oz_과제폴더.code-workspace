@@ -1,0 +1,19 @@
+{
+	"folders": [
+		{
+			"name": "oz_과제폴더",
+			"path": "../../../oz_과제폴더"
+		},
+		{
+			"name": "임시과제폴더",
+			"path": "../../../임시과제폴더"
+		},
+		{
+			"name": "htmlcss-study",
+			"path": "../../../htmlcss-study"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "htmlcss-study"
+	}
+}
