@@ -1,4 +1,6 @@
 #birds.py
+import Eagle
+
 def speak(self):
     return "소리질러!"
 

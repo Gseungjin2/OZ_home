@@ -1,4 +1,5 @@
 #mammals.py
+import Dog
 
 def speak(self):
     return "멍멍!"
