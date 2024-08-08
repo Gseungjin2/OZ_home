@@ -33,3 +33,12 @@ except requests.RequestException as e:
     print(f"웹 요청 중 오류 발생: {e}")
 except Exception as e:
     print(f"알 수 없는 오류 발생: {e}")
+
+
+
+lst50 = soup.select(".lst50") #50개 가져오기
+lst100 = soup.select(".lst100") #50개 가져오기 
+lst_all = lst50 + lst100 #위 두개 합치기
+
+lst_all = soup.find_all(class_=["lst50", 'lst100']) #한번에 가져오기
+lst_all = soup.findAll
