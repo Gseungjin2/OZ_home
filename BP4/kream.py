@@ -55,4 +55,4 @@ for i in items:
 
         print(category, product_brand, product_name_hood, product_price)
 
-driver.quit()
+driver.quit() #웹 드라이버 종료 및 브라우저 닫기

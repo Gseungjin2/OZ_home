@@ -41,4 +41,6 @@ lst100 = soup.select(".lst100") #50개 가져오기
 lst_all = lst50 + lst100 #위 두개 합치기
 
 lst_all = soup.find_all(class_=["lst50", 'lst100']) #한번에 가져오기
-lst_all = soup.findAll
+lst_all = soup.findAll_
+
+
