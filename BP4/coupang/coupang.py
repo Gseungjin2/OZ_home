@@ -29,7 +29,7 @@ for rank, item in enumerate(items, 1):
     else:
         print("🚀로켓 배송 불가")
     
-    print(f"링크 : https://www.coupang.com{link}")🚀
+    print(f"링크 : https://www.coupang.com{link}")
     if img_src.get("data-img-src"):
         img_url = f"http:{img_src.get('data-img-src')}"
     else :
