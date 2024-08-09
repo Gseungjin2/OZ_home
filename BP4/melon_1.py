@@ -7,6 +7,11 @@ headers = {"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleW
 # Melon 차트 페이지 URL
 url = "https://www.melon.com/chart/index.htm"
 
+# req = requests.get(url, headers=headers)
+# html = req.text
+
+# soup = BeautifulSoup(html.text, "html.parser")
+
 try:
     # 웹 페이지 요청
     response = requests.get(url, headers=headers)
@@ -29,18 +34,31 @@ try:
         print(f"앨범 : {album.text.strip()}")
         print()
 
+    # lst_all = soup.find_all(class_=["lst_50", "lst_100"]) # 한번에 결과 추출
+
+    # for rank, i in enumerate(lst_all, 1):
+    #     title = i.select_one(".elipais.rank01 a").text
+    #     singer = i.select_one(".elipais.rank02 a").text
+    #     albem = i.select_one(".elipais.rank03 a").text
+
+    #     print(f"[순위]:{rank}")
+    #     print(f"[제목]:{title}")
+    #     print(f"[가수]:{singer}")
+    #     print(f"[앨범]:{albem}")
+    #     print()
+
 except requests.RequestException as e:
     print(f"웹 요청 중 오류 발생: {e}")
 except Exception as e:
     print(f"알 수 없는 오류 발생: {e}")
 
 
+####################################################################################
+# lst50 = soup.select(".lst50") #50개 가져오기
+# lst100 = soup.select(".lst100") #50개 가져오기 
+# lst_all = lst50 + lst100 #위 두개 합치기
 
-lst50 = soup.select(".lst50") #50개 가져오기
-lst100 = soup.select(".lst100") #50개 가져오기 
-lst_all = lst50 + lst100 #위 두개 합치기
-
-lst_all = soup.find_all(class_=["lst50", 'lst100']) #한번에 가져오기
-lst_all = soup.findAll_
+# lst_all = soup.find_all(class_=["lst50", 'lst100']) #한번에 가져오기
+# lst_all = soup.findAll_
 
 
